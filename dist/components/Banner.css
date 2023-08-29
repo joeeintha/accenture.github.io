@@ -1,0 +1,59 @@
+.banner{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    background-color: #130d0d;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.banner_content{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    color: white;
+}
+
+.banner_content p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banner_content h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 992px){
+    .banner_content{
+        top: 22%;
+        left: 7%;
+    }
+
+    .banner_content h1{
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .banner{
+        height: 400px;
+    }
+    .banner_content{
+        top: 18%;
+        left: 7%;
+    }
+    .banner_content h1{
+        font-size: 2.6rem;
+    }
+}
